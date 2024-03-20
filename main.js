@@ -52,4 +52,4 @@ funtion comecaCronometro(){
     atualizaCronometro();
     setInterval(atualiaCronometro,1000);
 }
-comecaCronometro();
+//comecaCronometro();
