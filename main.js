@@ -35,14 +35,21 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-    if (tempoFinal > 0){
-        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
-    } else {
+   
+ return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+    
+} else {
     return "Prazo Finalizado";
     }
 }
-function atualiaCronometro(){
-    for (let i=0; i<contadores.length;i++){
-        contadores[i].textContent = calculaTempo(tempos[i]);
-    }
+
+funtion atualiarCronometro(){
+for (let i=0; i <contadores.lenght;i==){
+    cotadores[i].textContent= calculaTempo(tempo[i]);
 }
+}
+funtion comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualiaCronometro,1000);
+}
+comecaCronometro();
